@@ -1,0 +1,14 @@
+{
+  "name": "digitalrt",
+  "version": "1.0.0",
+  "description": "IPs address docs lookup full access",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}
