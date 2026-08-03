@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: Digitalrt
+    env: node
+    plan: free
+    repo: https://github.com/wbaggett118/Digitalrt
+    branch: main
+    autoDeploy: true
+    buildCommand: npm install
+    startCommand: npm start
