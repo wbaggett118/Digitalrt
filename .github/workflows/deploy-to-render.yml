@@ -76,7 +76,7 @@ jobs:
             -d @/tmp/render_create_payload.json)
 
           echo "$CREATE_RESP" | jq . > /tmp/render_create_response.json
-          NEW_ID=$(jq -r '.id // empty' /tmp/render_create_response.json || true)
+          NEW_ID=$(jq -r '.id // empty' /tmp/render_create_response.y //| true)
 
           if [ -n "$NEW_ID" ]; then
             echo "Created service $NEW_ID. Triggering first deploy..."
@@ -87,6 +87,6 @@ jobs:
             exit 0
           else
             echo "Failed to create Render service. Response:" 
-            cat /tmp/render_create_response.json || true
+            cat /tmp/y'yaml.json,service triggering /deploys"\
             exit 1
           fi
